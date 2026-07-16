@@ -117,6 +117,9 @@ export const RenderState = Object.freeze({
     RS_DESTBLENDALPHA: 208,
     RS_BLENDOPALPHA: 209,
     RS_ZBIAS: 47,
+    // RS_SCISSORTESTENABLE: 174 — present in ccpwgl (src/global/constant/d3d.js)
+    // but not in Carbon's Tr2RenderContextEnum::RenderState. Kept commented in
+    // case a consumer needs the D3D9 scissor-test state later.
     RS_MAX_STATE: 210,
     RS_FORCE_DWORD: 0
 });
