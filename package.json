@@ -1,0 +1,48 @@
+{
+    "name": "@carbonenginejs/runtime-const",
+    "version": "0.1.0",
+    "description": "CarbonEngineJS shared constant vocabulary for media payloads, graphics formats, audio, shader, D3D, and backend mappings.",
+    "type": "module",
+    "main": "src/index.js",
+    "exports": {
+        ".": "./src/index.js",
+        "./media": "./src/media/index.js",
+        "./graphics": "./src/graphics/index.js",
+        "./render-context": "./src/renderContext/index.js",
+        "./audio": "./src/audio/index.js",
+        "./shader": "./src/shader/index.js",
+        "./d3d": "./src/d3d/index.js",
+        "./webgpu": "./src/webgpu/index.js"
+    },
+    "sideEffects": false,
+    "engines": {
+        "node": ">=18"
+    },
+    "scripts": {
+        "test": "node --test",
+        "lint": "eslint --ext .js,.mjs src test",
+        "lint:fix": "eslint --fix --ext .js,.mjs src test"
+    },
+    "keywords": [
+        "carbonenginejs",
+        "runtime-const",
+        "constants",
+        "pixel-format",
+        "dxgi",
+        "webgpu"
+    ],
+    "files": [
+        "src",
+        "README.md",
+        "const-kb.md",
+        "LICENSE",
+        "NOTICE"
+    ],
+    "license": "MIT",
+    "devDependencies": {
+        "eslint": "^8.57.1"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}

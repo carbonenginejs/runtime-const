@@ -1,0 +1,21 @@
+{
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2022
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "es2022": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "quotes": [ "error", "double" ],
+        "semi": [ "error", "always" ],
+        "indent": [ 2, 4, { "SwitchCase": 1 } ],
+        "brace-style": [ "error", "allman", { "allowSingleLine": true } ],
+        "space-in-parens": [ "error", "never" ],
+        "array-bracket-spacing": [ 2, "always" ],
+        "object-curly-spacing": [ "error", "always" ]
+    }
+}
