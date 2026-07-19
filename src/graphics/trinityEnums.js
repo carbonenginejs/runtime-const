@@ -53,3 +53,13 @@ export const TriTransformBase = Object.freeze({
     TRITB_SIMPLE_SPRITE_FALLOFF: 16,
     TRITB_SIMPLE_SPRITE_CONSTANT: 17
 });
+
+// Carbon TRIEXTRAPOLATION (blue/include/ITriConstants.h:33) - curve
+// extrapolation modes, shared by trinity curves (TriEventCurve) and audio
+// (AudEventCurve). Class statics alias this export (TriOperator pattern).
+export const TriExtrapolation = Object.freeze({
+    TRIEXT_NONE: 0,
+    TRIEXT_CONSTANT: 1,
+    TRIEXT_GRADIENT: 2,
+    TRIEXT_CYCLE: 3
+});

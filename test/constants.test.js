@@ -8,6 +8,7 @@ import {
     ReflectionMode,
     TextureDimension,
     TriBatchType,
+    TriExtrapolation,
     dxgiToPixelFormat,
     getPixelFormatBlockHeight,
     getPixelFormatBlockWidth,
@@ -31,8 +32,15 @@ test("exports shared Trinity enum vocabulary", () =>
     assert.equal(TriBatchType.TRIBATCHTYPE_DISTORTION, 13);
     assert.equal(TriBatchType.TRIBATCHTYPE_COUNT_OF_BATCH_TYPES, 14);
     assert.equal(ReflectionMode.REFLECT_NEVER, 3);
+    assert.deepEqual(TriExtrapolation, {
+        TRIEXT_NONE: 0,
+        TRIEXT_CONSTANT: 1,
+        TRIEXT_GRADIENT: 2,
+        TRIEXT_CYCLE: 3
+    });
     assert.equal(Object.isFrozen(TriBatchType), true);
     assert.equal(Object.isFrozen(ReflectionMode), true);
+    assert.equal(Object.isFrozen(TriExtrapolation), true);
 });
 
 test("classifies compressed and srgb pixel formats", () =>
