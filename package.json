@@ -1,6 +1,6 @@
 {
     "name": "@carbonenginejs/runtime-const",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "CarbonEngineJS shared constant vocabulary for media payloads, graphics formats, audio, shader, D3D, and backend mappings.",
     "type": "module",
     "main": "src/index.js",
