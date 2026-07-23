@@ -6,6 +6,7 @@ import {
     MediaType,
     PixelFormat,
     ReflectionMode,
+    RenderingMode,
     TextureDimension,
     TriBatchType,
     TriExtrapolation,
@@ -31,6 +32,11 @@ test("exports shared Trinity enum vocabulary", () =>
 {
     assert.equal(TriBatchType.TRIBATCHTYPE_DISTORTION, 13);
     assert.equal(TriBatchType.TRIBATCHTYPE_COUNT_OF_BATCH_TYPES, 14);
+    assert.equal(RenderingMode.RM_ANY, 0);
+    assert.equal(RenderingMode.RM_ALPHA_ADDITIVE, 5);
+    assert.equal(RenderingMode.RM_PREPASS_COLOR, 13);
+    assert.equal(RenderingMode.RM_COUNT, 14);
+    assert.equal(Object.isFrozen(RenderingMode), true);
     assert.equal(ReflectionMode.REFLECT_NEVER, 3);
     assert.deepEqual(TriExtrapolation, {
         TRIEXT_NONE: 0,

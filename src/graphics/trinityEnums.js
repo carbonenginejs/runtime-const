@@ -17,6 +17,28 @@ export const TriBatchType = Object.freeze({
     TRIBATCHTYPE_COUNT_OF_BATCH_TYPES: 14
 });
 
+/** Trinity standard render-state selector from Shader/Tr2EffectStateManager.h.
+ * Cross-package: runtime-trinity batches/accumulators and engine dispatch both
+ * key on it. Distinct from TriBatchType (batch bucket) — a render-state mode.
+ * Unscoped Carbon enum: values are sequential from RM_ANY = 0. */
+export const RenderingMode = Object.freeze({
+    RM_ANY: 0,
+    RM_OPAQUE: 1,
+    RM_DECAL: 2,
+    RM_DECAL_NO_DEPTH: 3,
+    RM_ALPHA: 4,
+    RM_ALPHA_ADDITIVE: 5,
+    RM_DEPTH_ONLY: 6,
+    RM_PICKING: 7,
+    RM_FULLSCREEN: 8,
+    RM_SPRITE2D: 9,
+    RM_CULL: 10,
+    RM_LIGHT: 11,
+    RM_ERASE: 12,
+    RM_PREPASS_COLOR: 13,
+    RM_COUNT: 14
+});
+
 /** Shared EVE entity reflection vocabulary from EntityComponents. */
 export const ReflectionMode = Object.freeze({
     REFLECT_HIGH: 0,
